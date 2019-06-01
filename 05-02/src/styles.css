@@ -1,0 +1,253 @@
+input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+}
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e5ea;
+}
+
+body .content {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f1f5;
+  width: 300px;
+  height: 650px;
+  background-image: linear-gradient(
+      to bottom,
+      #f0f1f536 20%,
+      #f0f1f5 45%,
+      #ffffff 95%
+    ),
+    url(http://worldfuntours.com/wp-content/uploads/2018/04/img_818x4552017_10_18_23_20_48_677956.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: 550px;
+}
+
+.content header {
+  display: flex;
+  width: 260px;
+  height: 5px;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+
+header span {
+  display: flex;
+  font-size: 12px;
+}
+
+header span i {
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  width: 260px;
+  height: 35px;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+
+section.detail {
+  margin-top: 120px;
+}
+
+section.detail .detail__more-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 20px 25px 20px;
+}
+.detail__more-image .more-image__box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.detail__more-image .more-image__box:last-child {
+  background-color: #3f66fb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.more-image__box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.detail .tag-box {
+  margin-left: 20px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.tag-box .tag {
+  margin-right: 10px;
+  font-size: 10px;
+  color: #3f66fb;
+  background-color: #dfe4fa;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 14px;
+  border-bottom-left-radius: 0;
+}
+.detail .title-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: center;
+}
+.title-box .detail__title {
+  font-weight: 800;
+}
+.title-box .like {
+  color: #ed4635;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+}
+.like i {
+  margin-bottom: -3px;
+}
+
+.detail .address-box {
+  margin: 12px 20px 0 20px;
+  display: flex;
+  align-items: center;
+}
+.address-box i {
+  margin-right: 8px;
+  font-size: 10px;
+  color: #3f66fb;
+}
+.address-box .address {
+  color: #9aa8c3;
+  font-size: 12px;
+}
+
+.detail .rate-and-distance {
+  margin: 15px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.rate .rate_value {
+  margin-left: 3px;
+}
+.rate .yellow {
+  color: #fbd067;
+}
+.rate-and-distance .distance {
+  color: #9aa8c3;
+}
+.detail .description-box {
+  margin: 23px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.description-box .description-title {
+  font-size: 8px;
+  color: #9aa8c3;
+  margin-bottom: 10px;
+}
+.description-box .description-content {
+  font-size: 13px;
+  color: #929fbc;
+  margin-bottom: 10px;
+}
+
+.description-box .description-btn {
+  text-decoration: none;
+  color: #3f66fb;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.content footer {
+  margin-top: auto;
+}
+
+footer .tabbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  color: #3f66fb;
+  background-color: white;
+}
+.tabbar .tabbar-box {
+  display: flex;
+  justify-content: flex-start;
+  height: 55px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.tabbar-box .selected_bar {
+  width: 32px;
+  height: 3px;
+  background-color: #3f66fb;
+  display: none;
+  border-radius: 1px;
+}
+.tabbar-box i {
+  margin: auto;
+}
+.tabbar-box .selected_bar.selected {
+  display: block;
+}
+
+.tabbar-box:nth-child(3) .fas {
+  margin-top: -24px;
+  color: white;
+  background-color: #3f66fb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #f0f1f5;
+}
+footer .gesture-bar {
+  margin: 10px auto;
+  height: 4px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: #dce0e7;
+}

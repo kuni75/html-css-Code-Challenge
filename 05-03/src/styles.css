@@ -1,0 +1,205 @@
+input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+span,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e5ea;
+  flex-direction: column;
+  position: relative;
+}
+body .screen {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  width: 315px;
+  height: 650px;
+  position: relative;
+}
+
+.screen header {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  box-shadow: 0 5px 5px -5px rgb(192, 192, 192);
+  background-color: #f8f8f8;
+}
+header > span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+header > span:nth-child(2) {
+  flex-grow: 3;
+  font-size: 14px;
+  font-weight: 700;
+}
+.screen footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  background-color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 -5px 5px -5px rgb(192, 192, 192);
+  z-index: 20;
+  color: #9c9c9c;
+}
+footer .selected {
+  color: #d13d28;
+}
+.screen .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+.content .content__popular-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 130px 20px 15px 20px;
+  align-items: center;
+}
+
+.content .content__other-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 15px 20px;
+  align-items: center;
+}
+.other__title-column .other__title,
+.popular__title-column .popular__title {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.popular__title-column .popular__all {
+  font-size: 11px;
+  color: #d13d28;
+}
+.content .content__popular {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  grid-gap: 10px;
+  grid-template-rows: 90px 90px;
+  margin: auto;
+}
+.content__popular .content__popular-category {
+  background-size: 100%;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.content__popular .content__popular-category:nth-child(1) {
+  background-image: linear-gradient(
+      to bottom,
+      #f0f1f500 10%,
+      #75757556 30%,
+      #757575ad 95%
+    ),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3iayKyUU1x3XhhcZEqHGJKaaaJ9U7VflIlb6cBMfbMSyB33P_Q);
+}
+.content__popular .content__popular-category:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      #f0f1f500 10%,
+      #75757556 30%,
+      #757575ad 95%
+    ),
+    url(https://www.thereciperebel.com/wp-content/uploads/2018/05/no-bake-white-chocolate-raspberry-cheesecake-www.thereciperebel.com-600-15-500x375.jpg);
+}
+.content__popular .content__popular-category:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      #f0f1f500 10%,
+      #75757556 30%,
+      #757575ad 95%
+    ),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7grBks6EGY4NpQ18wvq7HwvUfcKP8d2WfpSZJ3YpxXZv_DZRd);
+}
+.content__popular .content__popular-category:nth-child(4) {
+  background-image: linear-gradient(
+      to bottom,
+      #f0f1f500 10%,
+      #75757556 30%,
+      #757575ad 95%
+    ),
+    url(https://www.vibrantplate.com/wp-content/uploads/2018/03/Coconut-yogurt-07-720x540.jpg);
+}
+.other__list {
+  margin: 0 20px;
+}
+.other__list .other__list-item {
+  height: 50px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.other__list-item i {
+  font-size: 14px;
+  color: #d13d28;
+}
+.other__list-item .list__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list__content .list__title {
+  font-size: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.list__content .list__description {
+  font-size: 10px;
+  color: #acacac;
+}

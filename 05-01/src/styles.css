@@ -1,0 +1,162 @@
+input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  width: 280px;
+  height: 610px;
+}
+body .navigation {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .navigation__title {
+  font-weight: 700;
+}
+
+body .signin form {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signin input[type="email"],
+.signin input[type="password"] {
+  width: 240px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 25px;
+}
+.signin input::placeholder {
+  color: #c7c6c7;
+  margin-left: 10px;
+}
+form a {
+  align-self: flex-end;
+  text-decoration: none;
+  font-size: 12px;
+  color: red;
+  margin: 15px 10px 15px 0;
+}
+
+.signin .signin__rememberme {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.signin__rememberme input[type="checkbox"] {
+  margin-left: 10px;
+  display: none;
+}
+
+input[id="remember_me"] + label {
+  margin-left: 10px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #e8e7e7;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+input[id="remember_me"] + label i {
+  display: none;
+  color: #e3433d;
+  font-size: 12px;
+}
+input[id="remember_me"]:checked + label i {
+  display: inline;
+}
+
+.signin__rememberme .rememberme__text {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #a6a6a6;
+}
+.signin .signin__button {
+  width: 260px;
+  height: 40px;
+  background-color: #e3433d;
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+  margin-top: 50px;
+}
+.signin .sigin__end {
+  font-weight: 800;
+  font-size: 11px;
+  margin: 30px 0 30px 10px;
+  display: inline-block;
+  color: #575757;
+}
+
+.content .external_login {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+.external_login button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+.external_login .facebook__button {
+  background-color: #465a95;
+}
+
+.external_login .twitter__button {
+  background-color: #5da1f2;
+}
+
+body .etc__button {
+  display: flex;
+  flex-direction: column;
+}
+
+.etc__button span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #bcbdbc;
+  margin-bottom: 5px;
+}
+
+.etc__button span a {
+  text-decoration: none;
+  color: #e3433d;
+  margin-left: 5px;
+}

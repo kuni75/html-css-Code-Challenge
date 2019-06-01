@@ -1,0 +1,168 @@
+input,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+span,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2998f9;
+  flex-direction: column;
+  position: relative;
+}
+body .screen {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  height: 650px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(#f7f7f7a9 0%, #f7f7f7a9 100%),
+    url(https://extmovie.maxmovie.com/xe/files/attach/images/135/497/948/021/3db4799ab014fd907ada563039e8e4aa.jpg);
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
+}
+.screen header {
+  /* position: absolute; */
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+header .status__bar {
+  top: 10px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.status__bar .status__bar-column {
+  margin: 0 20px;
+  font-size: 12px;
+}
+header .navigation__bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: -5px;
+  color: #7d7e7b;
+  font-weight: 400;
+}
+.navigation__bar > span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.navigation__bar > span:nth-child(2) {
+  flex-grow: 3;
+  font-size: 14px;
+  font-weight: 700;
+}
+.screen footer {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  min-height: 60px;
+  align-items: center;
+  z-index: 20;
+  color: #c4c4c4;
+}
+footer .selected {
+  color: #c9e5f8;
+}
+.screen .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6c6c6a;
+}
+
+.content .content__avartar {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-image: url(https://extmovie.maxmovie.com/xe/files/attach/images/135/497/948/021/3db4799ab014fd907ada563039e8e4aa.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  margin-bottom: 20px;
+}
+
+.content .content__name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #2998f9;
+  margin-bottom: 15px;
+}
+
+.content .content__location {
+  margin-bottom: 35px;
+}
+
+.content__button button {
+  width: 140px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.content__button .content__button-follow {
+  background-color: white;
+  color: #6c6c6a;
+}
+.content__button .content__button-message {
+  background-color: #2998f9;
+  color: white;
+}
+
+.content .content__status {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.content__status .content__status-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}

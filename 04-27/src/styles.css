@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.box1 {
+  background-color: #76c4c6;
+  width: 325px;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.box1 .dot_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 1s rotateDotBox infinite ease;
+}
+.box1 .dot_box .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background-color: #feffff;
+  margin: 5px;
+}
+
+.box2 {
+  background-color: #4bad9c;
+  width: 325px;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2 .square_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2 .square_box .square {
+  height: 20px;
+  width: 6px;
+  margin: 1px;
+  background-color: #feffff;
+  animation: 1.3s waveSquareBox infinite ease-in-out;
+}
+.box2 .square_box .square:nth-child(1) {
+  animation-delay: 0.125s;
+}
+.box2 .square_box .square:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.box2 .square_box .square:nth-child(3) {
+  animation-delay: 0.375s;
+}
+
+.box2 .square_box .square:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.box2 .square_box .square:nth-child(5) {
+  animation-delay: 0.625s;
+}
+@keyframes rotateDotBox {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes waveSquareBox {
+  0% {
+    height: 20px;
+  }
+  30% {
+    height: 50px;
+  }
+  60% {
+    height: 20px;
+  }
+}

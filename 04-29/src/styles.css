@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+.navigation_type_logo {
+  display: inherit;
+  background-repeat: no-repeat;
+  background-position: -272px -134px;
+  height: 40px;
+  width: 112px;
+}
+
+.Igtv_outline {
+  display: inherit;
+  background-position: -616px -135px;
+  background-repeat: no-repeat;
+  height: 39px;
+  width: 33px;
+}
+
+.navigation_type_logo,
+.Igtv_outline {
+  background-image: url(https://cdn.dribbble.com/users/1192538/screenshots/6349659/instagram.png);
+}
