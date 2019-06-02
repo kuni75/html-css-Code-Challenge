@@ -48,7 +48,7 @@ body .screen {
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(#f7f7f7a9 0%, #f7f7f7a9 100%),
-    url(https://extmovie.maxmovie.com/xe/files/attach/images/135/497/948/021/3db4799ab014fd907ada563039e8e4aa.jpg);
+    url("../img/3db4799ab014fd907ada563039e8e4aa.jpg");
   background-size: 450px;
   background-repeat: no-repeat;
   background-position-y: 50%;
@@ -118,7 +118,7 @@ footer .selected {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background-image: url(https://extmovie.maxmovie.com/xe/files/attach/images/135/497/948/021/3db4799ab014fd907ada563039e8e4aa.jpg);
+  background-image: url("../img/3db4799ab014fd907ada563039e8e4aa.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 50%;
